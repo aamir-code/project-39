@@ -1,0 +1,21 @@
+var fixedRect;
+var movingRect;
+
+function setup() {
+createCanvas(400,400);
+
+    fixedRect = createSprite(200,200,20,20);
+    fixedRect.shapeColor="green";
+    fixedRect.border = "yellow";
+
+    movingRect = createSprite(200,200,20,20);
+    movingRect.shapeColor="green";
+    movingRect.border = "yellow";
+
+
+}
+function draw() {
+    background("cyan");
+
+    drawSprites();
+}
